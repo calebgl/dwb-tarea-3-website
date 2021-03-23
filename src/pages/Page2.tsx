@@ -1,36 +1,33 @@
-import React from "react";
+import Image from "../components/Image";
+import image1 from "../utils/img/005153.png";
 
 const Page2 = () => {
 	return (
-		<div>
-			<h1>Title 2</h1>
+		<div className="page">
+			<h1>Controladores</h1>
+			<h2>
+				Para la tabla <span className="text-italic">Employee</span>
+			</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-				quas, facere perferendis eos dolore ratione asperiores
-				aspernatur repellendus necessitatibus placeat sapiente nostrum
-				recusandae nemo magni. Minus perferendis sit illo nesciunt
-				repellat molestiae error ullam recusandae fuga. Dolorem
-				inventore magni blanditiis nisi iusto aut consequatur iste
-				numquam impedit nam, error aspernatur dignissimos eligendi
-				nostrum minima esse dolores vel odit? Vero eos dolore, illum
-				eligendi possimus aut eius mollitia quae, fugiat repellendus ut
-				minima numquam nobis aspernatur eveniet. Provident quia debitis
-				odio, sed reprehenderit earum. Nisi quia qui fugit quaerat,
-				similique fuga sapiente exercitationem ipsam dolore quae quo ad,
-				explicabo eaque ratione optio quidem. Quia eveniet atque rem eum
-				sint impedit ipsam, ad aliquid eius delectus voluptatum. Porro,
-				quasi! Saepe, molestiae veniam a quo, hic ab unde quis obcaecati
-				magnam veritatis eligendi optio? Laudantium hic officia,
-				officiis aliquid nesciunt eius maxime reiciendis itaque nemo
-				incidunt ab in repellendus vero fugit ut soluta praesentium,
-				aperiam optio reprehenderit blanditiis voluptatibus non minima
-				saepe. Est architecto veritatis consectetur omnis laboriosam
-				temporibus et mollitia quasi eveniet maxime, obcaecati dolores
-				error, magni dicta ratione consequatur! Temporibus quasi
-				expedita sapiente delectus enim sequi est ullam, vero, nostrum
-				excepturi voluptates possimus. Temporibus pariatur reiciendis
-				laboriosam omnis doloribus? Delectus, rerum!
+				Después de agregar las dependencias crearemos el primer
+				controlador. Para esto nos dirigimos a la carpeta{" "}
+				<span className="text-italic">Controllers</span> damos clic
+				derecho{" "}
+				<span className="text-italic light">{`Add > Controller`}</span>.
 			</p>
+
+			<Image img={image1} alt="VS">
+				<p className="img-text text-center text-muted">
+					Hay que verificar que las opciones seleccionadas a la
+					izquierda sean{" "}
+					<span className="text-italic light">{`Common > API`}</span>{" "}
+					y a la derecha{" "}
+					<span className="text-italic light">
+						API Controller with read/write actions
+					</span>
+					.
+				</p>
+			</Image>
 		</div>
 	);
 };

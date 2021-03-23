@@ -5,7 +5,9 @@ const Navbar = () => {
 	return (
 		<nav className="navbar sticky">
 			<div className="container">
-				<Link to="/">Tarea #3</Link>
+				<div className="navbar-content">
+					<Link to="/">Tarea #3</Link>
+				</div>
 			</div>
 		</nav>
 	);

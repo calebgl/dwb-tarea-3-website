@@ -7,11 +7,11 @@ $breakpoints: (
 
 $font-family: (
   "body": (
-    "Noto Sans HK",
+    "Hind",
     sans-serif,
   ),
   "title": (
-    "Open Sans",
+    "Quicksand",
     sans-serif,
   ),
 );
@@ -23,6 +23,8 @@ $font-weight: (
   "bold": 700,
   "black": 900,
 );
+
+$font-size: 1.0625rem;
 
 $navbar-height: 3.75rem;
 $border: 1px solid hsl(0deg, 0%, 92.5%);

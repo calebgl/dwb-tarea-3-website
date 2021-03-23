@@ -1,10 +1,10 @@
 @import "./config";
 
-$font-size: 1.0625rem;
-
 .navbar {
+  align-items: center;
   background-color: hsl(0deg, 0%, 100%);
   box-shadow: $box-shadow;
+  display: flex;
   font-weight: map-get($font-weight, "bold");
   min-height: 3.75rem;
   height: $navbar-height;
@@ -16,6 +16,11 @@ $font-size: 1.0625rem;
     display: flex;
     font-size: $font-size;
     padding: 1rem 1.5rem;
+
+    .navbar-content {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -45,7 +50,7 @@ $font-size: 1.0625rem;
   li {
     border-radius: 0.25rem;
     margin: 0.25rem 0;
-    height: 34px;
+    min-height: 34px;
     display: flex;
     justify-content: flex-start;
 
