@@ -1,0 +1,68 @@
+@import "./config";
+
+$font-size: 1.0625rem;
+
+.navbar {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: $box-shadow;
+  font-weight: map-get($font-weight, "bold");
+  min-height: 3.75rem;
+  height: $navbar-height;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    font-size: $font-size;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.sidebar {
+  margin-top: calc(-1 * #{$navbar-height});
+  position: relative;
+  width: 300px;
+
+  .sidebar-content {
+    border-right: $border;
+    padding-top: $navbar-height;
+    height: 100vh;
+    top: 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0.55rem;
+      height: 100%;
+    }
+  }
+}
+
+.sidebar-list {
+  font-weight: map-get($font-weight, "semibold");
+
+  li {
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
+    height: 34px;
+    display: flex;
+    justify-content: flex-start;
+
+    &:hover {
+      background-color: hsl(0, 0%, 92%);
+    }
+
+    a {
+      align-self: center;
+      font-size: $font-size;
+      justify-self: left;
+      padding: 0.475rem 1rem;
+      width: 100%;
+
+      &.active {
+        color: hsl(174deg, 72%, 56%);
+      }
+    }
+  }
+}

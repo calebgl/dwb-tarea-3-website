@@ -1,0 +1,25 @@
+@import "./mixins";
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+
+  .wrapper-content {
+    display: flex;
+
+    .main {
+      flex: 1;
+    }
+  }
+}
+
+.main {
+  .container {
+    margin: 0 5rem;
+    padding: 2rem 2.5rem;
+  }
+}
