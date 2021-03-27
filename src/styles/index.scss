@@ -33,6 +33,7 @@ a {
 }
 
 .img-container {
+  margin: 1.42375rem 0;
   max-width: 100%;
 
   img {
@@ -60,4 +61,8 @@ a {
   .#{$key} {
     font-weight: #{$value};
   }
+}
+
+code {
+  tab-size: 2;
 }

@@ -1,16 +1,26 @@
+import { useEffect } from "react";
+import { highlight } from "../utils/scripts/highlight";
 import Image from "../components/Image";
 import image1 from "../utils/img/005153.png";
+import { codes_page2 } from "../utils/data";
+import "../styles/pages.scss";
 
 const Page2 = () => {
+	useEffect(() => highlight(), []);
+
 	return (
-		<div className="page">
+		<div className="page text-justify">
 			<h1>Controladores</h1>
 			<h2>
-				Para la tabla <span className="text-italic">Employee</span>
+				Para la tabla <span className="text-italic">Employees</span>
 			</h2>
 			<p>
-				Después de agregar las dependencias crearemos el primer
-				controlador. Para esto nos dirigimos a la carpeta{" "}
+				Después de haber hecho todo lo anterior, crearemos el primer
+				controlador, lo llamaremos{" "}
+				<span className="text-italic light">EmployeeController</span>{" "}
+				(Es importante que este en su nombre contenga{" "}
+				<span className="text-italic">Controller</span>, sino no
+				funcionará). Para esto nos dirigimos a la carpeta{" "}
 				<span className="text-italic">Controllers</span> damos clic
 				derecho{" "}
 				<span className="text-italic light">{`Add > Controller`}</span>.
@@ -28,6 +38,32 @@ const Page2 = () => {
 					.
 				</p>
 			</Image>
+
+			<p>
+				Nos aparecerá una plantilla en la cual podemos mandar a llamar
+				los métodos que modificamos en el proyecto previo. Como
+				resultado final obtendremos esto:
+			</p>
+
+			<pre>
+				<code>{codes_page2[0]}</code>
+			</pre>
+
+			<h2>
+				Para la tabla <span className="text-italic">Products</span>
+			</h2>
+
+			<pre>
+				<code>{codes_page2[1]}</code>
+			</pre>
+
+			<h2>
+				Para la tabla <span className="text-italic">Customers</span>
+			</h2>
+
+			<pre>
+				<code>{codes_page2[2]}</code>
+			</pre>
 		</div>
 	);
 };
