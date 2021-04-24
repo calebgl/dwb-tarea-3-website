@@ -26,3 +26,41 @@
     padding: 2rem 5rem;
   }
 }
+
+.footer {
+  background-color: hsl(220, 13%, 18%);
+  border-top: $border;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 15vh;
+
+  .container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
+
+        &:hover {
+          color: $color-turquoise;
+        }
+      }
+
+      svg {
+        margin-left: 0.5em;
+        font-size: 2rem;
+      }
+    }
+  }
+}

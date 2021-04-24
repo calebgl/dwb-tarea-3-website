@@ -65,22 +65,23 @@ export const codes_page1: string[] = [
     //código previo...
   }
 
-  public interface IActions<T, U> 
-			where T : class
-			where U : notnull
-    {
-			IQueryable<T> GetAll();
-			T Get(U id);
-			void Add(T obj);
-			void Update(U id, T obj);
-			void Delete(U id);
-    }
+  public interface IActions<T, U, V>
+		where T : class
+		where U : class
+		where V : notnull
+	{
+		IQueryable<T> GetAll();
+		T Get(V id);
+		void Add(U obj);
+		void Update(V id, U obj);
+		void Delete(V id);
+	}
 
   public abstract class FilterSpecification<T> where T : class 
   {
     public IQueryable<T> Filter(IQueryable<T> list)
     {
-      return ApplyFitler(list);
+      return ApplyFilter(list);
     }
 
     protected abstract IQueryable<T> ApplyFilter(IQueryable<T> list);

@@ -7,6 +7,7 @@ const Navbar = () => {
 			<div className="container">
 				<div className="navbar-content">
 					<Link to="/">Tarea #3</Link>
+					<p>Desarollo Web: Back-end</p>
 				</div>
 			</div>
 		</nav>
